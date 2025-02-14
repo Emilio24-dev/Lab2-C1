@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Mí</title>
+    <link rel="stylesheet" href="web.css">
+   
+</head>
+<body>
+    <script src="web.js"></script>
+
+    <h1 class="texto">Acerca de Mí</h1>
+    <div class="container">
+        <div class="mensaje" onclick="cambiarColor(this)" id="animal"> Mi animal favorito: Perro</div>
+        <div class="mensaje" onmouseover="mostrarMensaje(this, ' La Pizza!')" onmouseout="ocultarMensaje(this)">Comida favorita</div>
+        <div class="mensaje" ondblclick="cambiarTexto(this)"> Película/Serie favorita</div>
+        <div class="mensaje" onmouseenter="agrandarTexto(this)" onmouseleave="restaurarTexto(this)"> Canción favorita: Break-Three Days Grace</div>
+        <div class="mensaje" id="persona" oncontextmenu="mostrarAlerta(event)"> Persona a quién admiro</div>
+        <div class="mensaje" id="pais" onfocus="cambiarBorde(this)" tabindex="0"> País que quiero visitar</div>
+    </div>
+</body>
+</html>
